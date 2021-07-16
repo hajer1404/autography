@@ -1,0 +1,431 @@
+/**************************************** Fonts ********************************************/ 
+ @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); 
+ 
+ 
+ 
+ 
+ 
+ 
+ /**************************************** Global Styles ************************************/ 
+ *, 
+ ::after, 
+ ::before { 
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box; 
+ } 
+ body { 
+   font-family: "Open Sans", sans-serif; 
+   background: hsl(210, 36%, 96%); 
+   color: hsl(209, 61%, 16%); 
+   line-height: 1.5; 
+  font-size: 0.875rem; 
+ } 
+ 
+ 
+ html { 
+   scroll-behavior:smooth; 
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+ /**************************************   Navbar Section  *********************************/ 
+ nav { 
+   position: sticky; 
+   top: 0; 
+   z-index: 10; 
+   background: #fff; 
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+ } 
+ .nav-header { 
+   display: flex; 
+   align-items: center; 
+   justify-content: space-between; 
+   padding: 1rem; 
+ } 
+ .nav-toggle { 
+   font-size: 1.5rem; 
+   color: hsl(205, 86%, 17%); 
+   background: transparent; 
+   border-color: transparent; 
+   transition: all 0.3s linear; 
+   cursor: pointer; 
+ } 
+ .nav-toggle:hover { 
+   color: hsl(205, 86%, 17%); 
+   transform: rotate(90deg); 
+ } 
+ .links a { 
+   color: hsl(209, 34%, 30%); 
+   font-size: 1rem; 
+   text-transform: capitalize; 
+   letter-spacing: 0.1rem; 
+   display: block; 
+   padding: 0.5rem 1rem; 
+   transition: all 0.3s linear; 
+ } 
+ .links a:hover { 
+   background: hsl(205, 86%, 81%); 
+   color: hsl(205, 78%, 60%); 
+   padding-left: 1.5rem; 
+ } 
+ .links { 
+   height: 0; 
+   overflow: hidden; 
+   transition: all 0.3s linear; 
+ } 
+ .show-links { 
+   height: 10rem; 
+ } 
+ .links a.active { 
+   color:hsl(205, 78%, 60%); 
+ } 
+ ul { 
+   list-style-type: none; 
+ } 
+ a { 
+   text-decoration: none; 
+ } 
+ h2 { 
+   letter-spacing: 0.1rem; 
+   text-transform: capitalize; 
+   line-height: 1.25; 
+   margin-bottom: 0.75rem; 
+   font-family: "Roboto", sans-serif; 
+   font-size: 2rem; 
+ } 
+ 
+ 
+ @media screen and (min-width: 800px) { 
+   .nav-center { 
+     max-width: 1170px; 
+     margin: 0 auto; 
+     display: flex; 
+     align-items: center; 
+     justify-content: space-between; 
+     padding: 1rem; 
+   } 
+   .nav-header { 
+     padding: 0; 
+   } 
+   .nav-toggle { 
+     display: none; 
+   } 
+   .links { 
+    height: auto; 
+     display: flex; 
+   } 
+   .links a { 
+    padding: 0; 
+     margin: 0 0.5rem; 
+   } 
+   .links a:hover { 
+     padding: 0; 
+     background: transparent; 
+   } 
+   h2 { 
+     font-size: 2.5rem; 
+     line-height: 1; 
+  } 
+} 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ /****************************************   Slider Section  ******************************************/ 
+ .slider-container { 
+   border: 5px solid hsl(205, 78%, 60%); 
+   width: 80vw; 
+   margin: 0 auto; 
+   height: 40vh; 
+  max-width: 80rem; 
+   position: relative; 
+   border-radius: 0.5rem; 
+   overflow: hidden; 
+   margin-top: 4rem; 
+ } 
+ .slide { 
+   position: absolute; 
+   width: 100%; 
+   height: 100%; 
+   background: hsl(205, 90%, 88%); 
+   color: #fff; 
+   display: grid; 
+   place-items: center; 
+   transition: all 0.25s ease-in-out; 
+   text-align: center; 
+ } 
+ .slide-img { 
+   height: 100%; 
+   object-fit: cover; 
+ } 
+ .btn-container { 
+   display: flex; 
+   justify-content: center; 
+   margin-top: 0.75rem; 
+ } 
+ .prevBtn, 
+ .nextBtn { 
+   background: transparent; 
+   border-color: transparent; 
+   font-size: 1.75rem; 
+   cursor: pointer; 
+   margin: 0 0.25rem; 
+   text-transform: capitalize; 
+   letter-spacing: 2px; 
+   color: hsl(210, 22%, 49%); 
+   transition: all 0.3s linear; 
+ } 
+ .prevBtn:hover, 
+ .nextBtn:hover { 
+   color: hsl(209, 34%, 30%); 
+ } 
+ 
+ 
+ @media screen and (min-width: 576px) { 
+   .slider-container { 
+     height: 45vh; 
+   } 
+ } 
+ @media screen and (min-width: 768px) { 
+   .slider-container { 
+     height: 55vh; 
+   } 
+ } 
+ @media screen and (min-width: 992px) { 
+   .slider-container { 
+     height: 65vh; 
+   } 
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*****************************************   About Section  *****************************************/ 
+ .section { 
+   padding: 6rem 0; 
+ } 
+ .section-center { 
+   width: 90vw; 
+   margin: 0 auto; 
+   max-width: 1170px; 
+ } 
+ h2 { 
+   letter-spacing: 0.1rem; 
+   text-transform: capitalize; 
+   line-height: 1.25; 
+   margin-bottom: 0.75rem; 
+   font-family: "Roboto", sans-serif; 
+   font-size: 2rem; 
+ } 
+ p { 
+   margin-bottom: 1.25rem; 
+   color: hsl(210, 22%, 49%); 
+ } 
+ .title { 
+   text-align: center; 
+   margin-bottom: 4rem; 
+   margin-top: 40px; 
+ } 
+ .about-img { 
+   margin-bottom: 2rem; 
+ } 
+ .about-img img { 
+   border-radius: 0.25rem; 
+   object-fit: cover; 
+   height: 331px; 
+   width: 538px; 
+ } 
+ .about { 
+   background: #fff; 
+   border-radius: 0.25rem; 
+   display: grid; 
+   grid-template-rows: auto 1fr; 
+   font-size: 20px;
+ } 
+ .about-content { 
+   border-bottom-left-radius: 0.25rem; 
+   border-bottom-right-radius: 0.25rem; 
+   padding: 2rem 1.5rem; 
+ } 
+ .content { 
+   display: none; 
+ } 
+ .content.active { 
+   display: block; 
+   height: 150px; 
+   width: 538px; 
+ } 
+ @media screen and (min-width: 992px) { 
+   .about-img { 
+     margin-bottom: 0; 
+   } 
+   .about-center { 
+     display: grid; 
+     grid-template-columns: 1fr 1fr; 
+     column-gap: 2rem; 
+   } 
+   .section-center { 
+     width: 95vw; 
+   } 
+   h2 { 
+     font-size: 2.5rem; 
+     line-height: 1; 
+   } 
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*************************************   contact Section  *****************************************/ 
+ .form-section{ 
+ 	display: flex; 
+ 	align-items: center; 
+ 	justify-content: center; 
+   padding-top: 60px; 
+ } 
+ .container { 
+ 	background-color: #fff; 
+ 	border-radius: 5px; 
+ 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+ 	overflow: hidden; 
+ 	width: 400px; 
+ 	max-width: 100%; 
+ 	margin-left: 10px; 
+ 	margin-top: 50px; 
+   margin-bottom: 50px; 
+ } 
+ .header { 
+ 	border-bottom: 1px solid #f0f0f0; 
+ 	background-color: #f7f7f7; 
+ 	padding: 20px 40px; 
+ } 
+ .header h2 { 
+ 	margin: 0; 
+ } 
+ .form { 
+ 	padding: 30px 40px;	 
+ } 
+ .form-control { 
+ 	margin-bottom: 10px; 
+ 	padding-bottom: 20px; 
+ 	position: relative; 
+ } 
+ .form-control label { 
+ 	display: inline-block; 
+ 	margin-bottom: 5px; 
+ } 
+ .form-control input { 
+ 	border: 2px solid #f0f0f0; 
+ 	border-radius: 4px; 
+ 	display: block; 
+ 	font-family: inherit; 
+ 	font-size: 14px; 
+ 	padding: 10px; 
+ 	width: 100%; 
+ } 
+ .form-control input:focus { 
+ 	outline: 0; 
+ 	border-color: #777; 
+ } 
+ .form-control.success input { 
+ 	border-color: #2ecc71; 
+ } 
+ .form-control.error input { 
+ 	border-color: #e74c3c; 
+ } 
+ .form-control i { 
+ 	visibility: hidden; 
+ 	position: absolute; 
+ 	top: 40px; 
+ 	right: 10px; 
+ } 
+ .form-control.success i.fa-check-circle { 
+ 	color:hsl(205, 78%, 60%); 
+ 	visibility: visible; 
+ } 
+ .form-control.error i.fa-exclamation-circle { 
+ 	color: #e74c3c; 
+ 	visibility: visible; 
+ } 
+ .form-control small { 
+ 	color: #e74c3c; 
+ 	position: absolute; 
+ 	bottom: 0; 
+ 	left: 0; 
+ 	visibility: hidden; 
+ } 
+ .form-control.error small { 
+ 	visibility: visible; 
+ } 
+ .form button { 
+ 	background-color: hsl(205, 78%, 60%); 
+ 	border: 2px solid hsl(205, 78%, 60%); 
+ 	border-radius: 4px; 
+ 	color: #fff; 
+ 	display: block; 
+ 	font-family: inherit; 
+ 	font-size: 16px; 
+ 	padding: 10px; 
+ 	margin-top: 20px; 
+ 	width: 100%; 
+ } 
+ @media screen and (max-width: 992px) { 
+   .container { 
+     height: 470px; 
+   }  
+   .header { 
+     padding: 5px 5px; 
+   } 
+   .form { 
+     padding: 10px 20px;	 
+   } 
+ } 
+
+
+
+
+ 
+ /*************************************   Footer Section  ******************************************/ 
+ .footer { 
+   height:100px; 
+   display:flex; 
+   flex-direction: column; 
+   align-items:center; 
+   justify-content:center; 
+   position: relative; 
+   flex-wrap: wrap; 
+   background-color: #fff; 
+   width: 100%; 
+   z-index: 1; 
+   overflow: hidden; 
+   box-shadow: 0px 5px 30px 15px rgba(0, 0, 0, 0.1); 
+ } 
+ .footer p {  
+   font-size:20px; 
+   margin-bottom: 10px; 
+ } 
+ .social-icons { 
+   display: flex; 
+ } 
+ .social-icons a { 
+   margin: 0 0.5rem; 
+   color: hsl(205, 78%, 60%); 
+   transition: all 0.3s linear; 
+ } 
+ .social-icons a:hover { 
+   color: hsl(205, 90%, 76%); 
+ } 

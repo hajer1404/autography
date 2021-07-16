@@ -1,0 +1,272 @@
+/**************************************** Fonts ********************************************/ 
+ @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); 
+ 
+ 
+
+  
+ 
+ /**************************************** Global Styles ************************************/ 
+ *, 
+ ::after, 
+ ::before { 
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box; 
+ } 
+ body { 
+   font-family: "Open Sans", sans-serif; 
+   background: hsl(210, 36%, 96%); 
+   color: hsl(209, 61%, 16%); 
+   line-height: 1.5; 
+   font-size: 0.875rem; 
+ } 
+ 
+ 
+ html { 
+   scroll-behavior:smooth; 
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*****************************   Navbar Section  ************************************************/ 
+ nav { 
+   position: sticky; 
+   top: 0; 
+   z-index: 10; 
+   background: #fff; 
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+ } 
+ .nav-header { 
+   display: flex; 
+   align-items: center; 
+   justify-content: space-between; 
+   padding: 1rem; 
+ } 
+ .nav-toggle { 
+   font-size: 1.5rem; 
+   color: hsl(205, 86%, 17%); 
+   background: transparent; 
+   border-color: transparent; 
+   transition: all 0.3s linear; 
+   cursor: pointer; 
+ } 
+ .nav-toggle:hover { 
+   color: hsl(205, 86%, 17%); 
+   transform: rotate(90deg); 
+ } 
+ .links a { 
+   color: hsl(209, 34%, 30%); 
+   font-size: 1rem; 
+   text-transform: capitalize; 
+   letter-spacing: 0.1rem; 
+   display: block; 
+   padding: 0.5rem 1rem; 
+   transition: all 0.3s linear; 
+ } 
+ .links a:hover { 
+   background: hsl(205, 86%, 81%); 
+   color: hsl(205, 78%, 60%); 
+   padding-left: 1.5rem; 
+ } 
+ .links { 
+   height: 0; 
+   overflow: hidden; 
+   transition: all 0.3s linear; 
+ } 
+ .show-links { 
+   height: 10rem; 
+ } 
+ .links a.active { 
+   color:hsl(205, 78%, 60%); 
+ } 
+ ul { 
+   list-style-type: none; 
+ } 
+ a { 
+   text-decoration: none; 
+ } 
+ h2 { 
+   letter-spacing: 0.1rem; 
+   text-transform: capitalize; 
+   line-height: 1.25; 
+   margin-bottom: 0.75rem; 
+   font-family: "Roboto", sans-serif; 
+   font-size: 2rem; 
+ } 
+ @media screen and (min-width: 800px) { 
+   .nav-center { 
+     max-width: 1170px; 
+     margin: 0 auto; 
+     display: flex; 
+     align-items: center; 
+     justify-content: space-between; 
+     padding: 1rem; 
+   } 
+   .nav-header { 
+     padding: 0; 
+   } 
+   .nav-toggle { 
+     display: none; 
+   } 
+   .links { 
+     height: auto; 
+     display: flex; 
+   } 
+   .links a { 
+     padding: 0; 
+     margin: 0 0.5rem; 
+   } 
+   .links a:hover { 
+     padding: 0; 
+     background: transparent; 
+   } 
+   h2 { 
+     font-size: 2.5rem; 
+     line-height: 1; 
+   } 
+ } 
+ 
+ 
+ 
+ 
+ /************************************** Galleries Section ******************************************/ 
+ .galleries { 
+   padding: 106px 0; /*120*/ 
+ } 
+ .title { 
+   text-align: center; 
+   margin-bottom: 2rem; 
+ } 
+ .underline { 
+   width: 5rem; 
+   height: 0.25rem; 
+   background: hsl(205, 78%, 60%); 
+   margin-left: auto; 
+   margin-right: auto; 
+ } 
+ .btn-container { 
+   margin-bottom: 4rem; 
+   display: flex; 
+   justify-content: center; 
+ } 
+ .filter-btn { 
+   background: transparent; 
+   border-color: hsl(205, 78%, 60%); 
+   font-size: 1rem; 
+   text-transform: capitalize; 
+   margin: 0 0.5rem; 
+   letter-spacing: 1px; 
+   border-radius: 0.5rem; 
+   padding: 0.375rem 0.75rem; 
+   color: hsl(205, 86%, 17%); 
+   cursor: pointer; 
+   transition: all 0.3s linear; 
+ } 
+ .filter-btn:hover { 
+   background: hsl(205, 78%, 60%); 
+   color: #fff; 
+ } 
+ .section-center { 
+   width: 90vw; 
+   margin: 0 auto; 
+   max-width: 1170px; 
+   display: grid; 
+   gap: 3rem 2rem; 
+   justify-items: center; 
+ } 
+ .galleries-item { 
+   display: grid; 
+   gap: 1rem 2rem; 
+   max-width: 25rem; 
+ } 
+ 
+ 
+ .galleries-item img { 
+ border-radius: 300px; 
+ height: 200px; 
+ width: 200px; 
+ } 
+ 
+ 
+ .photo { 
+   object-fit: cover; 
+   height: 500px; 
+   border: 0.25rem solid hsl(205, 78%, 60%); 
+ } 
+ .item-info header { 
+   display: flex; 
+   justify-content: space-between; 
+   border-bottom: 0.5px dotted hsl(210, 22%, 49%); 
+   margin-top: 85px; 
+ } 
+ .item-info h4 { 
+   margin-bottom: 0.5rem; 
+ } 
+ h4 { 
+   text-transform: capitalize; 
+   line-height: 1.25; 
+   margin-bottom: 0.75rem; 
+   font-family: "Roboto", sans-serif; 
+ } 
+ 
+ 
+ @media screen and (min-width: 768px) { 
+   .galleries-item { 
+     grid-template-columns: 225px 1fr; 
+     gap: 0 1.25rem; 
+     max-width: 40rem; 
+   } 
+   .photo { 
+     height: 175px; 
+   } 
+   h4 { 
+     font-size: 1rem; 
+     line-height: 1; 
+   } 
+ } 
+ @media screen and (min-width: 1200px) { 
+   .section-center { 
+     width: 95vw; 
+     grid-template-columns: 1fr 1fr; 
+   } 
+   .photo { 
+     height: 150px; 
+   } 
+ } 
+ 
+ 
+ 
+ 
+ /*****************************   Footer Section  ************************************************/ 
+ .footer { 
+   height:100px; 
+   display:flex; 
+   flex-direction: column; 
+   align-items:center; 
+   justify-content:center; 
+   position: relative; 
+   flex-wrap: wrap; 
+   background-color: #fff; 
+   width: 100%; 
+   z-index: 1; 
+   overflow: hidden; 
+   box-shadow: 0px 5px 30px 15px rgba(0, 0, 0, 0.1); 
+ } 
+ .footer p {  
+   font-size:20px; 
+   margin-bottom: 10px; 
+ } 
+ .social-icons { 
+   display: flex; 
+ } 
+ .social-icons a { 
+   margin: 0 0.5rem; 
+   color: hsl(205, 78%, 60%); 
+   transition: all 0.3s linear; 
+ } 
+ .social-icons a:hover { 
+   color: hsl(205, 90%, 76%); 
+ } 

@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+ 
+ 
+   <head> 
+         <meta charset="UTF-8" /> 
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+         <title>Home</title> 
+ 
+ 
+         <!-- font-awesome --> 
+         <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
+         /> 
+ 
+ 
+         <!-- styles --> 
+         <link rel="stylesheet" href="/css/styles-index.css" /> 
+   </head> 
+
+ 
+  <body> 
+       <!------------------------ Navbar Section ---------------------------> 
+      <nav> 
+           <div class="nav-center"> 
+               <div class="nav-header"> 
+                  <h2>Autography.BMW</h2> 
+                  <button class="nav-toggle"><i class="fas fa-bars"></i></button> 
+               </div> 
+               <!-- links --> 
+               <ul class="links"> 
+                   <li> 
+                     <a href="#" class="active" >Home</a> 
+                  </li> 
+                   <li> 
+                      <a href="#about">About Us</a> 
+                   </li> 
+                   <li> 
+                      <a href="#contactus">Contact Us </a> 
+                   </li> 
+                   <li> 
+                      <a href="./html/gallerie.html">Photographers</a> 
+                   </li> 
+               </ul> 
+           </div> 
+       </nav> 
+ 
+ 
+       <!------------------------------- Slider Section ----------------------------> 
+       <div class="slider-container"> 
+          <div class="slide"> 
+              <img src="./images/1index.jpg" class="slide-img" alt="2bmw" /> 
+          </div> 
+          <div class="slide"> 
+              <img src="./images/2index.jpg" class="slide-img" alt="1bmw" /> 
+          </div> 
+          <div class="slide"> 
+              <img src="./images/3index.jpg" class="slide-img" alt="1bmw" /> 
+          </div> 
+       </div> 
+       <div class="btn-container"> 
+          <button type="button" class="prevBtn"> 
+             prev 
+          </button> 
+          <button type="button" class="nextBtn"> 
+             next 
+          </button> 
+       </div> 
+      
+ 
+ 
+      <!---------------------------- About Section -------------------------------> 
+       <section class="section" id="about"> 
+           <div class="title"> 
+               <h2>About Us</h2> 
+           </div> 
+   
+           <div class="about-center section-center"> 
+                <article class="about-img"> 
+                    <img src="./images/logo-index.jpg" alt="logo" /> 
+                </article> 
+                <article class="about"> 
+                    <div class="about-content"> 
+                       <!-- single item --> 
+                       <div class="content active" id="history"> 
+                          <p> 
+                            <strong>Autography.BMW</strong> is a collection of photographer communities 
+                            passionate about documenting differente model cars through impressive 
+                            photos that convey the strength and beauty of the car and the talent 
+                            of a photographer. you will find all the links of social networks, 
+                            to join us. you can contact us through the contact forum to add you to 
+                            the list of photographers as a photographer, or you are welcome with 
+                            all your segregation to enlarge and improve our community. 
+                          </p> 
+                       </div> 
+                    </div> 
+                 </article> 
+            </div> 
+       </section> 
+ 
+ 
+ 
+ 
+       <!--------------------------------- Form Section --------------------------------> 
+       <div class="form-section" id="contactus" > 
+           <div class="container" > 
+           <div class="header"> 
+              <h2>Contact Us</h2> 
+           </div> 
+           <form id="form" class="form"> 
+               <div class="form-control"> 
+                   <label for="username">Username</label> 
+                   <input type="text" placeholder="florinpop17" id="username" /> 
+                   <i class="fas fa-check-circle"></i> 
+                   <i class="fas fa-exclamation-circle"></i> 
+                   <small>Error message</small> 
+               </div> 
+               <div class="form-control"> 
+                   <label for="username">Email</label> 
+                   <input type="email" placeholder="a@florin-pop.com" id="email" /> 
+                   <i class="fas fa-check-circle"></i> 
+                   <i class="fas fa-exclamation-circle"></i> 
+                   <small>Error message</small> 
+               </div> 
+               <div class="form-control"> 
+                   <label for="username">Message</label> 
+                   <input type="textarea" placeholder="message" id="textarea"/> 
+                   <i class="fas fa-check-circle"></i> 
+                   <i class="fas fa-exclamation-circle"></i> 
+                   <small>Error message</small> 
+               </div> 
+               <button>Submit</button> 
+           </form> 
+           </div> 
+      </div> 
+ 
+ 
+ 
+ 
+      <!-------------------------------- Footer Section ------------------------------> 
+      <div> 
+          <footer class="footer"> 
+               <p>Copyright by HAJER ZAGA</p> 
+               <ul class="social-icons"> 
+                  <li> 
+                      <a href="https://www.facebook.com" target="_blank"> 
+                          <i class="fab fa-facebook"></i> 
+                      </a> 
+                  </li> 
+                  <li> 
+                      <a href="https://www.twitter.com" target="_blank"> 
+                          <i class="fab fa-twitter"></i> 
+                      </a> 
+                  </li> 
+                  <li> 
+                          <a href="https://www.instagram.com/autography.lux/" target="_blank"> 
+                          <i class="fab fa-instagram"></i> 
+                      </a> 
+                  </li> 
+               </ul> 
+          </footer> 
+      </div>  
+ 
+       <!-- javascript --> 
+       <script src="/js/script-index.js"></script> 
+  </body> 
+ </html> 
